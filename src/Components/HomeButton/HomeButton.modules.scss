@@ -1,0 +1,32 @@
+.HomeButton {
+text-align: center;
+a{
+  text-decoration: none;
+  height: 10px;
+}
+
+  p{
+
+    width: 600px;
+    display: inline-block;
+    position: relative;
+    color: white;
+font-size: 40px;
+  }
+  p:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #fcc97c;
+    transform-origin: bottom right;
+    transition: transform 0.60s ease-out;
+  }
+  p:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

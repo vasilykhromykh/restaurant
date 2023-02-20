@@ -1,0 +1,146 @@
+.MainPage {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  .photos {
+    width: 180vh;
+    .container {
+      position: relative;
+      width: 750px;
+      height: 500px;
+    }
+    .image {
+      display: block;
+      width: 750px;
+      height: 500px;
+      transition:all .5s ease;
+    }
+
+    .overlay {
+      position: absolute;
+
+      opacity: 0;
+      transition:all .5s ease;
+
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    .container:hover{
+      .image{
+        filter:grayscale(123);
+      }
+
+    }
+
+
+    .text {
+margin: 0;
+      font-size: 80px;
+      width: 500px;
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      color: #fcc97c
+
+    }
+
+    div {
+
+
+      p {
+        position: relative;
+        display: inline-block;
+        font-size: 2em;
+        font-weight: 800;
+
+        overflow: hidden;
+        background: linear-gradient(to right, #fcc97c, #fcc97c 50%,
+                #ffffff 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none;
+      }
+
+      p:hover {
+        background-position: 0 100%;
+        animation: gradient 2s ease infinite;
+      }
+
+      margin: 80px;
+      display: flex;
+      justify-content: space-between;
+      vertical-align: center;
+      align-items: center;
+
+      img {
+
+
+        border-radius: 30px;
+      }
+
+
+
+      .arr {
+
+
+        animation: gradient 2s ease infinite;
+
+        filter: drop-shadow(2px 2px 5px rgba(236, 236, 236, 0.5));
+      }
+    }
+  }
+}
+
+
+.Sections {
+
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  text-align: center;
+
+  .hover-underline-animation {
+    margin-bottom: 50px;
+    width: 450px;
+    display: inline-block;
+    position: relative;
+    color: white;
+
+  }
+
+  .hover-underline-animation:after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #fcc97c;
+    transform-origin: bottom right;
+    transition: transform 0.60s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+

@@ -1,0 +1,35 @@
+
+.MenuPage {
+  text-align: center;
+
+
+  .Sections {
+    flex-direction: column;
+
+    align-items: center;
+    display: flex;
+
+    .Section {
+      display: flex;
+      align-items: center;
+      height: 27vh;
+      margin-top: 3vh;
+      width: 45%;
+
+      img {
+        width: 1700px;
+        height: 200px;
+      }
+
+      div {
+        width: 800px;
+        align-items: center;
+
+      }
+
+    }
+  }
+
+}
+
+

@@ -1,0 +1,27 @@
+.ReservePage{
+
+h1{
+
+}
+  div{
+    height: 9vh;
+  }
+
+  .number {
+    margin: 300px;
+
+    font-size: 130px;
+    background: linear-gradient(to right, #FFF 20%, #fcc97c 30%, #fcc97c 60%, #FFF 80%);
+    background-size: 200% auto;
+    color: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1s linear infinite;
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }}
+}
+
+
